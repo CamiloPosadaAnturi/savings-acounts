@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Cuenta de Ahorros</title>
+    <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="contenedor-principal">
+        <h1 class="title">Cuenta de Ahorros</h1>
+        <p class="text">En esta página podrás interactuar con una cuenta de ahorros ficticia observando como crece el dinero en el tiempo gracias al interes compuesto. Para un uso adecuado ingrese el monto que añadirías a la cuenta (valor presente) la tasa de interés que el banco te ofrece (i) y el tiempo el cual vas a dejar el dinero en la cuenta(n). </p>
+
+        <form id="cuentaAhorros" class="valores">
+            <label for="presentValue">Valor Presente</label>
+            <input type="number" id="presentValue" name="presentValue" required>
+
+            <label for="interesRate">Tasa de Interés (%)</label>
+            <input type="number" id="interesRate" name="interesRate" required>
+
+            <label for="time">Tiempo en meses</label>
+            <input type="number" id="time" name="time" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+        </div>
+    </body>
+    <script src="./js/simulador.js"></script>
+</html>
