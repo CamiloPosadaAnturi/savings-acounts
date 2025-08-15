@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         result.textContent = `Tu Valor Futuro Será: $${futureValue}`;
+        // ejemplo para repositorio git hub
 
 })
 })
